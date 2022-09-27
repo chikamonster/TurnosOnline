@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Reserva tu turno Online</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form id="formulario">
+            <div id="registro" class="registro">
+                <h1>Solicita tu turno Online</h1>
+                <p>Ingrese su nombre</p>
+                <input id="firstName" type="text" placeholder="Marcelo">
+                <p>Ingrese su apellido</p>
+                <input id="surname" type="text" placeholder="Gomez">
+                <p>Ingrese su DNI</p>
+                <input id="dni" type="text" placeholder="Sin puntos ni comas">
+                <p>Seleccione una fecha</p>
+                <input id="date" type="date">
+                <button class="button" id="botonEnviar" value="Reservar">
+                    <span class="text">Reservar</span>
+                    <i class="fa-solid fa-check icon"></i>
+                </button>
+            </div>
+            <div id="buscador" class="buscador">
+                <h2>Ya tenes tu turno? <br> Consultalo!</h2>
+                <p>Ingrese su DNI</p>
+                <input type="text" id="dniBuscador" placeholder="Sin puntos ni comas">
+                <button id="botonConsultar" value="Buscar">
+                    <span>Buscar</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
