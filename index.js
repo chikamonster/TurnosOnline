@@ -18,8 +18,12 @@ function ask() {
 
 function newDiv() {
     const registro = document.getElementById("registro");
-    registro.innerHTML = "<p>¡Muchas gracias por reservar un turno con nosotros!</p>";
+    registro.innerHTML = "<p>¡Muchas gracias por reservar un turno con nosotros!</p><br><button><span>Volver</span></button>"
+    ;
     registro.className = "transitionRegistro";
+    registro.appendChild(volverBoton);
+    volverBoton.setAttribute("id", "volverBoton");
+    volverBoton.innerHTML = "<span>Volver</>";
 }
 
 function transition() {
@@ -40,6 +44,8 @@ function newDiv() {
     history.back(-1);
   });
 }
+
+
 
 let formulario = document.getElementById("formulario");
 formulario.addEventListener("submit", (e) => {
