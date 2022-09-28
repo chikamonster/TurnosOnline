@@ -16,14 +16,29 @@ function ask() {
     }
 }
 
-function newDiv(){
+function newDiv() {
     const registro = document.getElementById("registro");
     registro.innerHTML = "<p>¡Muchas gracias por reservar un turno con nosotros!</p>";
     registro.className = "transitionRegistro";
 }
 
-function transition (){
-    a = setTimeout(newDiv, 1500);
+function transition() {
+    setTimeout(newDiv, 1500);
+}
+
+
+function newDiv() {
+    globalThis = registro = document.getElementById("registro");
+    registro.innerHTML = "<p>¡Muchas gracias por reservar el turno con nosotros!</p>";
+    registro.className = "transitionRegistro";
+    globalThis = volverBoton = document.createElement("button");
+    registro.appendChild(volverBoton);
+    volverBoton.setAttribute("id", "volverBoton");
+    volverBoton.innerHTML = "<span>Volver</>";
+    
+    document.getElementById("volverBoton").addEventListener("mouseup", () => {
+    history.back(-1);
+  });
 }
 
 let formulario = document.getElementById("formulario");
@@ -34,8 +49,6 @@ formulario.addEventListener("submit", (e) => {
 let botonEnviar = document.getElementById("botonEnviar");
 botonEnviar.addEventListener("mouseup", assign_turn);
 botonEnviar.addEventListener("mouseup", transition);
-
-
 
 let botonConsultar = document.getElementById("botonConsultar");
 botonConsultar.addEventListener("mouseup", ask);
