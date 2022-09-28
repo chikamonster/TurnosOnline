@@ -1,0 +1,3 @@
+    registro.appendChild(volverBoton);
+    volverBoton.setAttribute("id", "volverBoton");
+    volverBoton.innerHTML = "<span>Volver</>";

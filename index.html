@@ -11,32 +11,37 @@
 </head>
 
 <body>
-    <div class="contenedor">
-        <form id="formulario">
-            <div id="registro" class="registro">
-                <h1>Solicita tu turno Online</h1>
-                <p>Ingrese su nombre</p>
-                <input id="firstName" type="text" placeholder="Marcelo">
-                <p>Ingrese su apellido</p>
-                <input id="surname" type="text" placeholder="Gomez">
-                <p>Ingrese su DNI</p>
-                <input id="dni" type="text" placeholder="Sin puntos ni comas">
-                <p>Seleccione una fecha</p>
-                <input id="date" type="date">
-                <button class="button" id="botonEnviar" value="Reservar">
-                    <span class="text">Reservar</span>
-                    <i class="fa-solid fa-check icon"></i>
-                </button>
-            </div>
-            <div id="buscador" class="buscador">
-                <h2>Ya tenes tu turno? <br> Consultalo!</h2>
-                <p>Ingrese su DNI</p>
-                <input type="text" id="dniBuscador" placeholder="Sin puntos ni comas">
-                <button id="botonConsultar" value="Buscar">
-                    <span>Buscar</span>
-                </button>
-            </div>
-        </form>
+    <div class="contenedorPadre">
+        <div class="contenedor">
+            <form id="formulario">
+                <div id="registro" class="registro">
+                    <h1>Solicita tu turno Online</h1>
+                    <p class="infoInput">Ingrese su nombre</p>
+                    <input id="firstName" type="text" placeholder="Marcelo">
+                    <p class="infoInput">Ingrese su apellido</p>
+                    <input id="surname" type="text" placeholder="Gomez">
+                    <p class="infoInput">Ingrese su DNI</p>
+                    <input id="dni" type="text" placeholder="Sin puntos ni comas">
+                    <p class="infoInput">Seleccione una fecha</p>
+                    <input id="date" type="date">
+                    <button class="button" id="botonEnviar" value="Reservar">
+                        <span class="text">Reservar</span>
+                        <i class="fa-solid fa-check icon"></i>
+                    </button>
+                </div>
+                <div id="buscador" class="buscador">
+                    <h2>Ya tenes tu turno? <br> Consultalo!</h2>
+                    <p>Ingrese su DNI</p>
+                    <input type="text" id="dniBuscador" placeholder="Sin puntos ni comas">
+                    <button id="botonConsultar" value="Buscar">
+                        <span>Buscar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="homeImage">
+            <img class="img" src="./senior-man-sitting-at-restaurant-table-with-laptop-calling-the-waiter.jpg" alt="Home image" >
+        </div>
     </div>
     <script src="./index.js"></script>
 </body>

@@ -16,35 +16,15 @@ function ask() {
     }
 }
 
-function newDiv() {
-    const registro = document.getElementById("registro");
-    registro.innerHTML = "<p>¡Muchas gracias por reservar un turno con nosotros!</p><br><button><span>Volver</span></button>"
-    ;
-    registro.className = "transitionRegistro";
-    registro.appendChild(volverBoton);
-    volverBoton.setAttribute("id", "volverBoton");
-    volverBoton.innerHTML = "<span>Volver</>";
-}
-
 function transition() {
-    setTimeout(newDiv, 1500);
+    setTimeout(mensajeRegistro, 1000);
 }
 
-
-function newDiv() {
-    globalThis = registro = document.getElementById("registro");
-    registro.innerHTML = "<p>¡Muchas gracias por reservar el turno con nosotros!</p>";
+function mensajeRegistro() {
+    const registro = document.getElementById("registro");
+    registro.innerHTML = "<p>¡Muchas gracias por reservar un turno con nosotros!</p><br><button><span>Volver</span></button>";
     registro.className = "transitionRegistro";
-    globalThis = volverBoton = document.createElement("button");
-    registro.appendChild(volverBoton);
-    volverBoton.setAttribute("id", "volverBoton");
-    volverBoton.innerHTML = "<span>Volver</>";
-    
-    document.getElementById("volverBoton").addEventListener("mouseup", () => {
-    history.back(-1);
-  });
 }
-
 
 
 let formulario = document.getElementById("formulario");
