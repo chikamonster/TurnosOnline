@@ -148,3 +148,24 @@ button {
 #volverBoton{
     margin-top: 40px;
 }
+
+@media screen and (max-width: 1121px){
+
+    .homeImage{
+        display: none;
+    }
+ 
+    
+    .contenedor {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .registro{
+        width: 80%;
+    }
+
+    .transitionRegistro{
+        width: 80%;
+    }
+}
