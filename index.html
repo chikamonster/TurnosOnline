@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Reserva tu turno Online</title>
 </head>
-
 <body>
     <div class="contenedorPadre">
         <div class="contenedor">
@@ -19,20 +17,32 @@
                 </div>
                 <div id="registro" class="registro">
                     <h1>Solicita tu turno Online</h1>
-                    <p class="infoInput">Ingrese su nombre</p>
+                    <p class="infoInput">Ingrese su nombre:</p>
                     <input id="firstName" type="text" placeholder="Marcelo">
-                    <p class="infoInput">Ingrese su apellido</p>
+                    <p class="infoInput">Ingrese su apellido:</p>
                     <input id="surname" type="text" placeholder="Gomez">
-                    <p class="infoInput">Ingrese su DNI</p>
+                    <p class="infoInput">Ingrese su DNI:</p>
                     <input id="dni" type="text" placeholder="Sin puntos ni comas">
-                    <p class="infoInput">Seleccione una fecha</p>
+                    <p class="infoInput">Seleccione una fecha:</p>
                     <input id="date" type="date">
+                    <p class="infoInput">Elegi tu horario:</p>
+                    <select type="text" id="hour">
+                        <option value="Blanck"> </option>
+                        <option value="9:00">9:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
                     <button class="button" id="botonEnviar" value="Reservar">
                         <span class="text">Reservar</span>
                         <i class="fa-solid fa-check icon"></i>
                     </button>
                 </div>
-                <!--  <div id="buscador" class="buscador">
+                <!-- <div id="buscador" class="buscador">
                     <h2>Ya tenes tu turno? <br> Consultalo!</h2>
                     <p>Ingrese su DNI</p>
                     <input type="text" id="dniBuscador" placeholder="Sin puntos ni comas">
@@ -49,5 +59,4 @@
     </div>
     <script src="./index.js"></script>
 </body>
-
 </html>

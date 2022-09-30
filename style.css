@@ -76,6 +76,18 @@ input {
     font-weight: 500;
 }
 
+select {
+    width: 80%;
+    margin: 20px;
+    padding: 3px;
+    color: black;
+    font-weight: 500;
+}
+
+option{
+    color: black;
+}
+ 
 h1,
 h2 {
     margin-bottom: 20px;
