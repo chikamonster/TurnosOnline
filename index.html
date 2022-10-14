@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Reserva tu turno Online</title>
 </head>
@@ -18,15 +18,15 @@
                 <div id="registro" class="registro">
                     <h1>Solicita tu turno Online</h1>
                     <p class="infoInput">Ingrese su nombre:</p>
-                    <input id="firstName" type="text" placeholder="Marcelo">
+                    <input id="firstName" type="text" placeholder="Marcelo" required="">
                     <p class="infoInput">Ingrese su apellido:</p>
-                    <input id="surname" type="text" placeholder="Gomez">
+                    <input id="surname" type="text" placeholder="Gomez" required="">
                     <p class="infoInput">Ingrese su DNI:</p>
-                    <input id="dni" type="text" placeholder="Sin puntos ni comas">
+                    <input id="dni" type="number" maxlength="8" placeholder="Sin puntos ni comas" required="">
                     <p class="infoInput">Seleccione una fecha:</p>
-                    <input id="date" type="date">
+                    <input id="date" type="date" required="">
                     <p class="infoInput">Elegi tu horario:</p>
-                    <select type="text" id="hour">
+                    <select type="text" id="hour" required="">
                         <option value="Blanck"> </option>
                         <option value="9:00">9:00</option>
                         <option value="10:00">10:00</option>
@@ -37,7 +37,7 @@
                         <option value="15:00">15:00</option>
                         <option value="16:00">16:00</option>
                     </select>
-                    <button class="button" id="botonEnviar" value="Reservar">
+                    <button class="button" id="botonEnviar" type="submit" value="Reservar">
                         <span class="text">Reservar</span>
                         <i class="fa-solid fa-check icon"></i>
                     </button>
@@ -57,6 +57,8 @@
                 alt="Home image">
         </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/luxon@3.0.4/build/global/luxon.min.js"></script>
 </body>
 </html>
