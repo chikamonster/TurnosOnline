@@ -24,7 +24,7 @@
                     <p class="infoInput">Ingrese su DNI:</p>
                     <input id="dni" type="number" maxlength="8" placeholder="Sin puntos ni comas" required="">
                     <p class="infoInput">Seleccione una fecha:</p>
-                    <input id="date" type="date" required="">
+                    <input id="date" type="date" min="2022-13-10" required="">
                     <p class="infoInput">Elegi tu horario:</p>
                     <select type="text" id="hour" required="">
                         <option value="Blanck"> </option>
@@ -59,6 +59,6 @@
     </div>
     <script src="./js/functions.js"></script>
     <script src="./js/index.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/luxon@3.0.4/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
 </body>
 </html>

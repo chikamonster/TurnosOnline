@@ -1,8 +1,4 @@
-// LUXON
 
-const DateTime = luxon.DateTime;
-const fecha = DateTime.local(2022,3,12);
-console.log(fecha.c);
 
 
 // Llamdo de variables
