@@ -1,5 +1,7 @@
-
-
+// Fecha y hora local
+const DateTime = luxon.DateTime;
+const now = DateTime.local({ zone: "America/Buenos_Aires" })
+console.log(now.toJSDate());
 
 // Llamdo de variables
 let firstName = document.getElementById("firstName");
